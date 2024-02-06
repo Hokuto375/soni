@@ -1,0 +1,309 @@
+<header id="commonHeader">
+<section id="flowsHead" class="wf-mplus1p"></section>
+<section id="flows" class="wf-mplus1p">トレーニング診断</section>
+</header>
+<br>
+<div class="toukoue">
+<%= link_to "投稿へ", tweets_path %>
+</div>
+<div id="wrapper">
+   <div class="sense">
+        <article id="pageBody">
+
+            <div class="point_box">
+            <div class="box">
+            <div class="txt">
+            <p>1分だけ下記の質問に答えてみてください。あなたにぴったりのトレーニング内容と食事内容がわかります!</p>
+            </div>
+            </div>
+            </div>
+
+
+            <ul class="qalist wf-mplus1p">
+
+            <li id="1" class="question">
+                <a name="#1"></a>
+                <div class="qbox"><span  class="q">Q.</span>目標は?</div>
+                <div class="qabox">
+                <div class="aiueo">
+                    <a href="#2" onclick="show(2)" class="qabtn"><div class="btnBox btnBox_y">筋肉をつけたい</div></a>
+                    <a href="#3" onclick="show(3)" class="qabtn"><div class="btnBox btnBox_n">ダイエット</div></a>
+                </div>
+            </li>
+            <li id="2" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>現在の体型は？</div>
+                <div class="qabox">
+                    <a href="#4" onclick="show(4)" class="qabtn"><div class="btnBox btnBox_y">やせ型</div></a>
+                    <a href="#5" onclick="show(5)" class="qabtn"><div class="btnBox btnBox_n">肥満型</div></a>
+                </div>
+            </li>
+            <li id="3" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>ジムには？</div>
+                <div class="qabox">
+                <div class="ai">
+                    <a href="#105" onclick="show(105)" class="qabtn"><div class="btnBox btnBox_y">通う</div></a>
+                    <a href="#106" onclick="show(106)" class="qabtn"><div class="btnBox btnBox_n">通わない</div></a>
+            </li>
+
+            <li id="4" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>ジムには？</div>
+                <div class="qabox">
+                <div class="aiu">
+                    <a href="#101" onclick="show(101)" class="qabtn"><div class="btnBox btnBox_y">通う</div></a>
+                    <a href="#102" onclick="show(102)" class="qabtn"><div class="btnBox btnBox_n">通わない</div></a>               
+                </div>
+            </li>
+        
+            <li id="5" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>ジムには？</div>
+                <div class="qabox">
+                <div class="aiue">
+                    <a href="#103" onclick="show(103)" class="qabtn"><div class="btnBox btnBox_y">通う</div></a>
+                    <a href="#104" onclick="show(104)" class="qabtn"><div class="btnBox btnBox_n">通わない</div></a>               
+                </div>
+            </li>
+            </ul>
+
+            <div class="answerList">
+
+                <div id="101" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">以下の通り</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>筋肉→やせ型→ジム通う
+                        トレーニング内容・・・
+                        ⭕️
+                        オススメトレーニング方法
+                        胸･･･ベンチプレス、ダンベルフライ、ディップス
+                        背中･･･ラットプルダウン、チンニング、デッドリフト
+                        肩･･･ミリタリープレス、ショルダープレス、サイドレイズ
+                        腕･･･ナローベンチプレス、
+                        (脚)･･･スクワット、レッグプレス
+                        
+                        
+                        食事
+                        増量期のPFCには様々な考え方がありますが、P（タンパク質）は体重×2〜2.5g、脂質は目標摂取カロリーの20％程度、炭水化物は総摂取カロリーから、タンパク質と脂質を引いた割合がオススメです。目標摂取カロリー3500kcalで、体重60kgの人の場合、タンパク質150g、脂質78g、炭水化物550gとなります。増量期の場合、1日3食だと、１回の食事量がかなり増えるため、補食を取り入れ、1日5回〜６回に分けて摂取することをオススメします。 
+                        食事量を分散するだけでなく、効率的な栄養摂取、空腹による筋分解も防ぐ事も出来ます。1日で考えると、朝7時に朝食、10時に補食、13時に昼食、16時に補食、19時に夕食、22時に夜食となります。
+                         
+                        オススメの食材・・・・牛、豚、鶏肉、青魚、鮭、大豆類、パスタ、そば、卵、チーズ、ジャガイモ、かぼちゃ、さつまいも、ブロッコリー、アボカド、アスパラ、バナナ、和菓子、プロテインなど
+                        </p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="103" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">あ</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>筋肉→ぽっちゃり→ジム通う
+                        トレーニング内容・・・
+                        ⭕️→標準体型(体脂肪15%)になるまで週3で全身トレーニング法か週4で上半身と下半身に分けてトレーニングを行う。
+                        
+                        おすすめトレーニング法
+                        胸･･･ベンチプレス、
+                        背中･･･ラットプルダウン、デッドリフト
+                        肩･･･ミリタリープレス、サイドレイズ、ショルダープレス
+                        脚･･･レッグプレス、スクワット、
+                        
+                        
+                        
+                        ❌→有酸素運動(トレーニングをしても筋肉が付きづらくなってしまうのに加え、疲労が溜まるため1週間辺りの総負荷量が落ちてしまうため。)
+                        
+                        
+                        食事・・・
+                        ⭕️→肥満体型から筋肉を残して痩せたい場合は栄養素が不足するためたんぱく質量は多くなり1日あたり体重×2.3〜3.1倍g摂取する必要があります。高タンパク、低カロリーの食事が基本で、カロリーが低くタンパク質を多く含む肉や魚、乳製品、大豆製品などをメニューに加え、高カロリーでタンパク質の少ない糖質（炭水化物）を控えましょう。
+                        さらに食物繊維、ビタミン、ミネラル、アミノ酸などの栄養素も、野菜や果物から積極的に摂取していきましょう。
+                        糖質、脂質の摂取量の調整
+                        糖質や脂質も体を作るのには欠かせない栄養素ですが、摂取しすぎると脂肪を落としにくくなります。
+                        
+                        
+                        サラダ油からオリーブオイルやココナッツオイルへ変えるなど、良質な脂質を摂取しましょう。
+                        
+                        
+                        減量期の脂質の摂取目安量は1日に30グラム程度とされています。
+                        
+                        
+                        糖質（炭水化物）はタンパク質を吸収したり、脂肪を代謝するためにも必要な栄養素です。
+                        こちらも摂取のしすぎは減量の失敗につながります。
+                        減量期の糖質の摂取目安量は1日の50グラム程度とされています。
+                        これらの摂取目安量は性別、年齢、体重によっても変動します。
+                        また、いきなり無理な糖質制限や脂質制限を行うことで体調不良に陥る可能性もあります。
+                        無理なく、自分に合った範囲で制限しましょう。
+                        
+                        
+                        
+                        
+                        ❌→極端に食事を減らす。筋トレした後にしっかり栄養を取らないと合成と分解のバランスが悪くなり筋トレした意味がなくなってしまう。
+                        </p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="102" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">い</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>筋肉→痩せ型→ジム通わない
+                        トレーニング内容・・・
+                        
+                        
+                        食事・・・
+                        </p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="104" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">う</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>筋肉→ぽっちゃり→ジム通わない
+                        トレーニング内容・・・
+                        
+                        ・自重
+                        胸→ワイドプッシュアップ、ワンハンドサイドプッシュアップ、ツイストプッシュアップ
+                        腕→リバースプッシュアップ
+                        背中→チンニング
+                        腹→クランチ、メイソンツイスト、
+                        脚→ワイドスクワット、ブルガリアンスクワット
+                        
+                        
+                        ・ダンベル使用
+                        腕→ダンベルカール、ハンマーカール、リストカール、フレンチプレス
+                        胸→ダンベルプレス、デクラインダンベルプレス、アッパーチェストフライ
+                        背中→ダンベルローイング、ベントオーバーロー、リバースフライ
+                        肩→サイドレイズ、ショルダープレス、アーノルドプレス、リアレイズ、フロントレイズ
+                        脚→スクワット、ランジ、スプリットスクワット、ルーマニアンデッドリフト
+                        
+                        
+                        食事・・・
+                        
+                        </p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+                    </div>
+                    </div>
+                </div>
+                <div id="105" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">う</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>ダイエット→ジム通う
+                        トレーニング内容・・・
+
+                        食事
+                        
+                        
+                        ・ダイエットにおすすめしたい食品
+                        
+                        
+                        ダイエット中に食べてもOKな食べ物は、野菜や果物、タンパク質が豊富に含まれる赤身肉、海藻類などです。これらの食品は、むしろ積極的に食べた方がいいでしょう。
+                        
+                        野菜や果物には食物繊維やビタミン類、赤身肉にはタンパク質、海藻類には食物繊維やミネラルが多く含まれています。どれも、健康な身体づくりに欠かせない栄養素のため、不足させないことが大切です。ただし、果物は糖質が多く含まれているため、食べすぎに注意しましょう。
+                        また、赤身肉だけを食べすぎると便秘の原因になるため注意が必要です。
+                        
+                        
+                        ・ダイエット中はできるだけ避けたい食品
+                        ダイエット中は、糖質や脂質を多く含む食品を避けましょう。ただし、糖質や脂質を減らしすぎると、身体のエネルギー消費が抑えられて痩せにくくなるため、適度に摂ることが大切です。おやつに洋菓子を食べたり、週に何度も揚げ物を食べたりすることは避けましょう。
+                        また、ファストフード中心の食生活は、脂質や糖質を摂りすぎてしまいがちです。ビタミンやミネラル、食物繊維が不足して、体調を崩したり基礎代謝が下がったりする恐れもあるため、頻繁に食べることはおすすめできません。
+                        また、飲食店では糖質や脂質が多く、食物繊維は少ないメニューが豊富なため、外食の回数が増えると体重も増えやすくなります。どうしても外食する場合は、できるだけサラダや海藻類、きのこ類を含むメニューを選びましょう。
+                        </p>
+
+                    </div>
+                    </div>
+                </div>
+                <div id="106" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるトレーニングと食事内容は<span class="fs-18"><span class="bg-y">う</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>ダイエット→ジム通わない
+                        トレーニング内容・・・
+                        ※以下表記するのは体重50kgの人の1時間の消費カロリーを表すため各自の体重に合わせて計算をしてください。
+                        
+                        
+                        1位スイミング･･･500kcal以上、水中ウォーキングでも約300kcal
+                        2位サイクリング･･･350〜400kcal
+                        3位ヨガ･･･パワーヨガ→約200kcal、ホットヨガ→約300kcal
+                        4位ランニング(軽いショギング)･･･約300kcal
+                        5位ウォーキング⋯約180kcal
+                        
+                        
+                        食事・・・
+                        </p>
+
+
+        </article>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function(){
+   $('a[href^=#]').click(function() {
+      var speed = 600;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+$(function(){
+    h = $(window).height();
+    h = h-30;
+    $(".question").css("min-height", h + "px");
+    $(".answerList .box").css("min-height", h + "px");
+    
+});
+function show(idName){ 
+    $("#" + idName).show();
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+

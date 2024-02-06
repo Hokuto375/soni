@@ -1,0 +1,67 @@
+<img src="loaf.jpg">
+<div class="yasai">
+<br>
+<br>
+<br>
+<div class="title">
+<p><h1>PFCバランスのとれた料理を投稿しよう！！</h1></p>
+</div>
+<div class="new">
+<h3>新規投稿ページ</h3>
+<%= form_for @tweet do |f| %>
+
+  <div class="moji">
+  <div class="field">
+    <%= f.label :料理名 %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+
+
+<div class="field">
+ <%= f.label :タンパク質  %>
+ <%= f.number_field :protein, :size => 10 %>
+ </div>
+
+<div class="field">
+ <%= f.label :脂質  %>
+ <%= f.number_field :fat, :size => 10 %>
+ </div>
+
+<div class="field">
+ <%= f.label :炭水化物  %>
+ <%= f.number_field :carbohydrate, :size => 10 %>
+ </div>
+
+ <div class="field">
+    <%= f.label :材料 %>
+    <%= f.text_field :ingredient, :size => 30 %>
+  </div>
+
+
+
+
+  <div class="field">
+    <%= f.label :自由記述  %>
+    <%= f.text_area :about, :size => "30x2" %>
+  </div>
+  <div class="field">
+    <%= f.label :写真 %>
+    <%= f.file_field :image %>
+    </div>
+  </div>
+  <%= f.submit "投稿する" %>
+<% end %>
+
+<%= link_to "診断へ", sindans_path %>
+<%= link_to "投稿一覧へ", tweets_path %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>

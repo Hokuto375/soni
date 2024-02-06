@@ -1,0 +1,12 @@
+<h1>自分の題名</h1>
+<h3>一覧ページ</h3>
+<%= link_to "新規投稿へ", new_overwork_path %>
+<div class="overworks-container">
+  <% @overworks.each do |t| %>
+    <div class="overwork">
+      <%= t.カラム名 %>
+      <%= t.カラム名 %>
+      <%= t.カラム名 %>
+    </div>
+  <% end %>
+</div>

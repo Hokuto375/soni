@@ -1,0 +1,18 @@
+<h1>自分の題名</h1>
+<h3>一覧ページ</h3>
+<%= link_to "新規投稿へ", new_tweet_path %>
+<div class="overworks-container">
+  <% @tweets.each do |t| %>
+    <div class="overwork">
+    <div class="image">
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    </div>
+      <%= t.name %>
+      <%= t.protein %>
+      <%= t.fat %>
+      <%= t.carbohydrate %>
+      <%= t.ingredient %>
+      <%= t.about %>
+    </div>
+  <% end %>
+</div>
