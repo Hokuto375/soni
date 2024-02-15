@@ -34,7 +34,6 @@ body {
     border-bottom: solid 2px #6cb4e4;
     background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
     background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-
 }
 #commonHeader section#flows {
     margin: 0 auto;
@@ -145,6 +144,7 @@ article:after, section:after, .clrFx:after {
 
 .qbox{
     text-align:center;
+    margin-right: 70px;
 }
 .qabox{
     width:300px;
@@ -155,6 +155,7 @@ article:after, section:after, .clrFx:after {
   font-size:15px;
   line-height:1.5em;
   padding:10px;
+  margin: 0auto;
 }
 .question:after{
     clear:both;
@@ -211,19 +212,20 @@ article:after, section:after, .clrFx:after {
     cursor :pointer;
     
     color: #fff;
-    font-size:150%;
+    
     line-height: 90px;
     
     margin-top:30px;
 }
 
 .btnBox_y{
-    background-color: #FF8DB4;
-    margin-right: 40px;
+    background-image: linear-gradient(45deg, #ff7070 0%, #fd91e0 100%);
+
 }
 
 .btnBox_n{
-    background-color: #62D7DE;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  margin-left: 40px;
 }
 
 .btnBox_x{
@@ -263,7 +265,8 @@ article:after, section:after, .clrFx:after {
     font-family: "Mplus 1p";
     font-size:300%;
     height: 50px;
-    color:#F55257;
+    color:hsl(358, 89%, 64%);
+    margin-right: 15px;
 }
 
 

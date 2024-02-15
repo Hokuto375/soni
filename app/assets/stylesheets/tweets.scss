@@ -10,9 +10,10 @@
 }
 
 .title{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     color: rgb(0, 0, 0);
+    font-family: "Nico Moji";
 }
 
 .new{
@@ -23,11 +24,123 @@
     
 }
 
-.yasai{
+body.yasai{
     background-image: url(loaf.jpg);;
     opacity:0.8;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .moji{
     text-align: left;
 }
+
+.field input{
+    width: 200px;
+    height: 27px;
+}
+
+.field textarea{
+    width: 200px;
+    
+}
+
+.field1{
+    display: flex;
+    gap: 50px;
+}
+
+.field2{
+    display: flex;
+    gap: 50px;
+}
+
+.field3{
+    display: flex;
+    gap: 50px;
+}
+
+.field4{
+    display: flex;
+    gap: 50px;
+}
+
+.field5{
+    display: flex;
+    gap: 50px;
+}
+
+.field6{
+    display: flex;
+    gap: 50px;
+}
+
+.field7{
+    display: flex;
+    gap: 50px;
+}
+.new{
+    background-color: rgba(240, 248, 255, 0.845);
+    margin-left: 20%;
+    margin-right: 20%;
+   
+}
+
+.edgar{
+    width: 1020px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.allout{
+    font-size: 38PX;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin-left: 13px;
+}
+
+.top{
+    display: flex;
+    height: 300px;
+}
+
+.chinnning{
+   position: relative;
+}
+
+p1{
+    position: absolute;
+    color: #c5c5c5;
+    top: 550px;
+    left: 250px;
+    font-size: 30px;
+}
+
+.toukou
+{
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    text-decoration: none;
+    color: #000000;
+    border: dashed 1px #252a2d;
+    background: #c3c3c4;
+    border-radius: 2px;
+    transition: .4s;
+}
+
+.sinda
+{
+    display: inline-block;
+    padding: 15px 23px;
+    text-decoration: none;
+    border: 1px;
+    background: rgb(0, 0, 0);;
+    color: #fff;
+    box-shadow: 0px 2px 4px #575; 
+}
+

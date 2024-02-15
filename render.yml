@@ -1,0 +1,22 @@
+databases:
+  - name: soni_DB
+    databaseName: soni_db_dpx9
+    user: soni
+    region: singapore
+
+services:
+  - type: web
+    name: soni
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: soni_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+

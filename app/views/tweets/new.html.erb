@@ -1,51 +1,60 @@
 <img src="loaf.jpg">
-<div class="yasai">
+<body class="yasai">
 <br>
 <br>
 <br>
 <div class="title">
-<p><h1>PFCバランスのとれた料理を投稿しよう！！</h1></p>
+<p><h1>PFCバランスのとれた料理を投稿しよう！</h1></p>
 </div>
+<br>
+<br>
+<br>
+<br>
 <div class="new">
-<h3>新規投稿ページ</h3>
+<br>
+<br>
+<h3></h3>
 <%= form_for @tweet do |f| %>
 
   <div class="moji">
-  <div class="field">
+  <div class="field1">
     <%= f.label :料理名 %>
     <%= f.text_field :name, :size => 30 %>
   </div>
+  <br>
 
 
-
-<div class="field">
- <%= f.label :タンパク質  %>
+<div class="field2">
+ <%= f.label :タンパク質（g） %>
  <%= f.number_field :protein, :size => 10 %>
  </div>
-
-<div class="field">
- <%= f.label :脂質  %>
+ <br>
+<div class="field3">
+ <%= f.label :脂質（g）  %>
  <%= f.number_field :fat, :size => 10 %>
  </div>
-
-<div class="field">
- <%= f.label :炭水化物  %>
+ <br>
+<div class="field4">
+ <%= f.label :炭水化物（g）  %>
  <%= f.number_field :carbohydrate, :size => 10 %>
  </div>
-
- <div class="field">
+ <br>
+ <div class="field5">
     <%= f.label :材料 %>
     <%= f.text_field :ingredient, :size => 30 %>
   </div>
 
+  <br>
 
 
-
-  <div class="field">
+  <div class="field6">
     <%= f.label :自由記述  %>
     <%= f.text_area :about, :size => "30x2" %>
   </div>
-  <div class="field">
+
+  <br>
+
+  <div class="field7">
     <%= f.label :写真 %>
     <%= f.file_field :image %>
     </div>
@@ -55,6 +64,9 @@
 
 <%= link_to "診断へ", sindans_path %>
 <%= link_to "投稿一覧へ", tweets_path %>
+<%= link_to "TOPへ", root_path %>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -64,4 +76,5 @@
 <br>
 <br>
 
-</div>
+
+</body>
